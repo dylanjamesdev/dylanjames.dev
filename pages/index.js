@@ -57,6 +57,6 @@ export async function getServerSideProps(_) {
     .then((res) => res.json());
 
   return {
-    props: { githubProfileData, githubRepoDataFiltered },
+    props: { githubProfileData, githubRepoData },
   };
 }
