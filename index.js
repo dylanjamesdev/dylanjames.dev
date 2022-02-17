@@ -124,7 +124,7 @@ export const featuredProjects = [
     link: "https://tritan.gg/",
     companylogo: "https://cdn.tritan.gg/tritan-bot/logo.webp",
     date: "2020 – Present",
-    desc: "Tritan Bot is a multipurpose Discord bot that can be used for many things.",
+    desc: "Tritan Bot is a multipurpose Discord bot developed in NodeJS that can be used for many things.",
     github: "https://github.com/dylanjamesdev/tritan-bot",
   },
   {
@@ -132,16 +132,16 @@ export const featuredProjects = [
     company: "Windy Pink",
     link: "https://windy.pink",
     companylogo:
-      "https://cdn.discordapp.com/avatars/803120688776478780/48d798126dfdd162d1c3f49a116709f4.webp?size=1024",
-    date: "2020 - 2021",
-    desc: "Windy Pink is an image hosting service for Discord.",
+      "https://media.discordapp.net/attachments/936747785557000283/943025414484426813/windy.png",
+    date: "2020 - Present",
+    desc: "Windy Pink is an image hosting service for Discord developed in React and Express.",
   },
   {
     role: "Full Stack Developer",
     company: "Infinity Bot List",
     link: "https://infinitybots.gg",
     companylogo: "https://cdn.infinitybots.xyz/images/png/Infin2.png",
-    date: "2020 - Present",
-    desc: "Infinity Bot List is a web service that provides a searchable database of Discord bots to the average user.",
+    date: "2020 - 2021",
+    desc: "Infinity Bot List is a bot list written in expressjs.",
   },
 ];

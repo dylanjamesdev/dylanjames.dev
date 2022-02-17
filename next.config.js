@@ -6,6 +6,7 @@ module.exports = {
       "cdn.tritan.gg",
       "cdn.discordapp.com",
       "cdn.infinitybots.xyz",
+      "media.discordapp.net",
     ],
   },
 };

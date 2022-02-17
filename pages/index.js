@@ -7,11 +7,16 @@ const Skills = dynamic(() => import("../containers/Skills"));
 const Proficiency = dynamic(() => import("../containers/Proficiency"));
 const FeaturedProjects = dynamic(() => import("../containers/Featured"));
 const GithubRepos = dynamic(() => import("../containers/Github"));
+const TeamTritanRepos = dynamic(() => import("../containers/TeamTritanRepos"));
 const GithubProfileCard = dynamic(() => import("../components/Footer"));
 import { openSource } from "..";
 import SEO from "../components/SEO";
 
-export default function Home({ githubProfileData, githubRepoData }) {
+export default function Home({
+  githubProfileData,
+  githubRepoData,
+  teamTritanRepos,
+}) {
   return (
     <div>
       <SEO
@@ -33,6 +38,7 @@ export default function Home({ githubProfileData, githubRepoData }) {
       <Skills />
       <FeaturedProjects />
       <Proficiency />
+      <TeamTritanRepos x={teamTritanRepos} />
       <GithubRepos repos={githubRepoData} />
       <GithubProfileCard prof={githubProfileData} />
     </div>
@@ -56,7 +62,12 @@ export async function getServerSideProps(_) {
     .catch(console.error)
     .then((res) => res.json());
 
+  const teamTritanRepos = await fetch(
+    `https://api.github.com/users/Team-Tritan/repos?per_page=100`
+  )
+    .catch(console.error)
+    .then((res) => res.json());
   return {
-    props: { githubProfileData, githubRepoData },
+    props: { githubProfileData, githubRepoData, teamTritanRepos },
   };
 }
