@@ -16,7 +16,7 @@ export const openSource = {
 export const socialLinks = {
   github: "https://github.com/dylanjamesdev",
   gitlab: "https://gitlab.com/dylanjames",
-  discord: "https://discord.gg/jY2WQx4jDg",
+  discord: "https://discord.gg/n5GE82ShZA",
 };
 
 export const skillsSection = {
