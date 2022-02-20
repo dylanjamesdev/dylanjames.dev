@@ -38,7 +38,7 @@ export default function Home({
       <Skills />
       <FeaturedProjects />
       <Proficiency />
-      
+
       <GithubRepos repos={githubRepoData} />
       <GithubProfileCard prof={githubProfileData} />
     </div>
@@ -51,23 +51,18 @@ Home.prototype = {
 
 export async function getServerSideProps(_) {
   const githubProfileData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}`
+    `https://api.github.com/users/dylanjamesdev`
   )
     .catch(console.error)
     .then((res) => res.json());
 
   const githubRepoData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}/repos?per_page=100`
+    `https://api.github.com/users/dylanjamesdev/repos?per_page=100`
   )
     .catch(console.error)
     .then((res) => res.json());
 
-  const teamTritanRepos = await fetch(
-    `https://api.github.com/users/Team-Tritan/repos?per_page=100`
-  )
-    .catch(console.error)
-    .then((res) => res.json());
   return {
-    props: { githubProfileData, githubRepoData, teamTritanRepos },
+    props: { githubProfileData, githubRepoData },
   };
 }
