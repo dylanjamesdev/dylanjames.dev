@@ -49,7 +49,7 @@ Home.prototype = {
   githubProfileData: PropTypes.object.isRequired,
 };
 
-export async function getServerSideProps(_) {
+export async function getServerSideProps() {
   const githubProfileData = await fetch(
     `https://api.github.com/users/dylanjamesdev`
   )
