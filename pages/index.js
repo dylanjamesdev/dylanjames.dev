@@ -38,7 +38,7 @@ export default function Home({
       <Skills />
       <FeaturedProjects />
       <Proficiency />
-      <TeamTritanRepos x={teamTritanRepos} />
+      <TeamTritanRepos repos={teamTritanRepos} />
       <GithubRepos repos={githubRepoData} />
       <GithubProfileCard prof={githubProfileData} />
     </div>
