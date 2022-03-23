@@ -128,6 +128,14 @@ export const featuredProjects = [
     github: "https://github.com/dylanjamesdev/tritan-bot",
   },
   {
+    role: "Co-Owner",
+    company: "Serenity VPN",
+    link: "https://serenityvpn.org",
+    companylogo: "https://serenityvpn.org/img/logo.png",
+    date: "2022 - Present",
+    desc: " Serenity VPN is a secure, private, safe, minimal logging VPN service that provides you free anonymous internet access.",
+  },
+  {
     role: "Frontend Developer",
     company: "Windy Pink",
     link: "https://windy.pink",
@@ -135,13 +143,5 @@ export const featuredProjects = [
       "https://media.discordapp.net/attachments/936747785557000283/943025414484426813/windy.png",
     date: "2020 - Present",
     desc: "Windy Pink is an image hosting service for Discord developed in React and Express.",
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Infinity Bot List",
-    link: "https://infinitybots.gg",
-    companylogo: "https://cdn.infinitybots.xyz/images/png/Infin2.png",
-    date: "2020 - 2021",
-    desc: "Infinity Bot List is a bot list written in expressjs.",
   },
 ];
