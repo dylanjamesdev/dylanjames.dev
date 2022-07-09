@@ -122,7 +122,7 @@ export const featuredProjects = [
     role: "Owner",
     company: "Tritan Bot",
     link: "https://tritan.gg/",
-    companylogo: "https://cdn.tritan.gg/tritan-bot/logo.webp",
+    companylogo: "https://s3.wasabisys.com/team-tritan/tritan-bot/logo.webp",
     date: "2020 – Present",
     desc: "Tritan Bot is a multipurpose Discord bot developed in NodeJS that can be used for many things.",
     github: "https://github.com/dylanjamesdev/tritan-bot",
@@ -132,7 +132,7 @@ export const featuredProjects = [
     company: "Serenity VPN",
     link: "https://serenityvpn.org",
     companylogo: "https://serenityvpn.org/img/logo.png",
-    date: "2022 - Present",
+    date: "2022 - 2022",
     desc: " Serenity VPN is a secure, private, safe, minimal logging VPN service that provides you free anonymous internet access.",
   },
   {
